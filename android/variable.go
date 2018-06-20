@@ -59,6 +59,16 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Device_support_hwfde struct {
+			Cflags      []string
+			Header_libs []string
+			Shared_libs []string
+		}
+
+		Device_support_hwfde_perf struct {
+			Cflags []string
+		}
+
 		Device_uses_hwc2 struct {
 			Cflags []string
 		}
@@ -187,6 +197,8 @@ type productVariables struct {
 	UseGoma                    *bool `json:",omitempty"`
 	Debuggable                 *bool `json:",omitempty"`
 	Eng                        *bool `json:",omitempty"`
+	Device_support_hwfde       *bool `json:",omitempty"`
+	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_uses_hwc2           *bool `json:",omitempty"`
 	Treble_linker_namespaces   *bool `json:",omitempty"`
 	Sepolicy_split             *bool `json:",omitempty"`
