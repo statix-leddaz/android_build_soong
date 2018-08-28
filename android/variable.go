@@ -69,6 +69,10 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Device_support_legacy_hwfde struct {
+			Cflags []string
+		}
+
 		Device_uses_hwc2 struct {
 			Cflags []string
 		}
@@ -200,6 +204,7 @@ type productVariables struct {
 	Device_support_hwfde       *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_uses_hwc2           *bool `json:",omitempty"`
+	Device_support_legacy_hwfde *bool `json:",omitempty"`
 	Treble_linker_namespaces   *bool `json:",omitempty"`
 	Sepolicy_split             *bool `json:",omitempty"`
 	Enforce_vintf_manifest     *bool `json:",omitempty"`
